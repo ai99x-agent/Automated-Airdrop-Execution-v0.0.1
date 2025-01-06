@@ -21,3 +21,24 @@ python fetch_twitter_comments.py
 Node.js Endpoint:
 
 Ensure your Node.js server is running and ready to receive POST requests at the specified endpoint.
+>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<
+Dependencies: Install the required packages using:
+
+bash
+Copy code
+npm install @solana/web3.js @solana/spl-token fs
+Payer Keypair: Create a keypair file (payer-keypair.json) containing the private key of the wallet sending the tokens.
+
+Token Mint Address: Replace YOUR_TOKEN_MINT_ADDRESS with the mint address of the token you wish to transfer.
+
+Filtered Comments: Save the filtered comments from the previous script to a file named filtered-comments.json, formatted as:
+
+json
+Copy code
+["recipientAddress1,amount1", "recipientAddress2,amount2"]
+Run: Execute the script using:
+
+bash
+Copy code
+node solana_token_transfer.js
+Transaction Confirmation: Check the console for transaction signatures and verify the transfers on Solana explorers like Solscan.
